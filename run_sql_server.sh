@@ -8,4 +8,4 @@ id=$(docker ps -aqf "name=RBC")
 
 sleep 10
 
-docker exec -i ${id} /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P Password7$ -i /usr/src/sql_scripts/list_db.sql
+docker exec -i ${id} /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P Password7$ -i /usr/src/sql_scripts/*.sql
